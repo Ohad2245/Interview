@@ -1,0 +1,122 @@
+.navbar_container {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  z-index: 11;
+  transition: 0.5s;
+  color: #fff;
+  width: 100%;
+  margin-top: -30px;
+  
+}
+.title {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  margin-top: 5.5px;
+}
+
+.title .e {
+  width: 18px;
+  height: 3px;
+  background: white;
+  top: -7.2vmin;
+  border-bottom-right-radius: 10vmin;
+  border-bottom-left-radius: 10vmin;
+}
+.roommie {
+  color: black;
+  display: flex;
+  gap: 5px;
+  align-items: left;
+}
+
+.roommie .language{
+  margin-left:auto;
+}
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+:root {
+  --mainColor: #2e3758;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+}
+/* header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+} */
+nav a {
+  margin:0 2rem;
+  color: var(--textColor);
+  text-decoration: none;
+  position: relative;
+  color: #c1b7b7;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding:0 10px;
+  
+}
+nav a:after {
+  content: "";
+  position: absolute;
+  background:linear-gradient(#b946c8,rgb(87, 56, 90));
+  height: 1.8px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:hover:after {
+  width: 100%;
+  text-decoration: none;
+}
+
+.footer{
+  filter:blur(1px);
+}
+@media screen and (max-width: 1024px) {
+  nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+/* ================= Media Queries Small ================= */
+
+@media screen and (max-width: 600px) {
+  nav a {
+    margin: 0 17px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .navbar_container {
+    position: fixed; 
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    transition: 0.5s;
+    color: #fff;
+    width: 100%;
+  }
+}

@@ -1,0 +1,119 @@
+.container.contact__container {
+  width: 80%;
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  gap: 12px;
+}
+
+.contact__options {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 50% 50%;
+  gap: 1.2rem;
+  width: 800px;
+}
+
+.contact__option {
+  background: #5c63f1;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  /* transition: all 400ms ease; */
+}
+
+.contact__option:hover {
+  border-radius: rgba(77, 181, 255, 0.4);
+}
+
+.contact__options-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+/* form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+} */
+
+/* input,textarea{
+    width:100%;
+    padding:1.5rem;
+    border-radius: 0.5rem;
+    background:transparent;
+    border:2px solid rgba(77,181,255,0.4);
+    resize: none;
+    color:#fff;
+} */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.contact__option .sendMessage {
+  color: transparent;
+}
+
+.interactive {
+  width: 100%;
+  height: 100%;
+}
+
+.interactive:hover .sendMessage {
+  display: block;
+}
+.contact__option:hover {
+  font-size: 0;
+}
+.sendMessage {
+  color: white;
+}
+
+.contact__option:hover .sendMessage {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+/* ================= Media Queries Medium ================= */
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .contact__options {
+    width: 100%;
+  }
+}
+
+/* ================= Media Queries Small ================= */
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: 90%;
+  }
+  .contact__options {
+    width: 100%;
+  }
+}

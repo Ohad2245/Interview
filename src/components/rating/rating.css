@@ -1,0 +1,22 @@
+.star {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+ 
+  
+  input[type="radio"] {
+    display: none;
+  }
+  

@@ -1,0 +1,19 @@
+.ul{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    background:rgba(93, 110, 162, 0.75);
+    right:0;
+    width:100%;
+    border-top:2px solid #5b3374;
+}
+
+.li{
+    padding-left:15%;
+    color:white;
+}
+.a:hover{
+    border-bottom:none;
+    color:gray;
+}
